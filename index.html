@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Tienda Demo</h1>
+        <div class="top-controls">
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">Todo</button>
+                <button class="filter-btn" data-category="electronica">Electrónica</button>
+                <button class="filter-btn" data-category="ropa">Ropa</button>
+                <button class="filter-btn" data-category="libros">Libros</button>
+                <button class="filter-btn" data-category="muebles">muebles</button>
+                <button class="filter-btn" data-category="joyeria">joyeria</button>
+                <button class="filter-btn" data-category="deportes">deportes</button>
+
+            </div>
+            <input type="text" id="searchInput" placeholder="Buscar productos...">
+            <button id="cartBtn" class="cart-btn">
+                Carrito (<span id="cartCount">0</span>)
+            </button>
+        </div>
+    </header>
+    <main class="products-container" id="productsContainer">
+    </main>
+    <footer class="footer">
+        Proyecto demo para clase — HTML + CSS + JS simples.
+    </footer>
+    <aside id="cartPanel" class="cart-panel">
+        <button id="closeCart" class="close-cart">X</button>
+        <h2>Tu carrito</h2>
+        <div id="cartItems"></div>
+        <div class="cart-summary">
+            <p>Subtotal: <span id="subtotal">$0.00</span></p>
+            <button id="payBtn" class="pay-btn">Pagar</button>
+        </div>
+    </aside>
+    <button id="abrirCarrito">Carrito</button>
+    <script src="script.js"></script>
+</body>
+</html>
